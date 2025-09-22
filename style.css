@@ -1,0 +1,102 @@
+body{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+h1, h2{
+    color: rgb(65, 62, 62);
+}
+
+nav{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    margin-bottom: 20px;
+}
+.bienvenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bienvenu h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 0;    
+}
+.conten1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conten2 h1{
+   text-align: center;
+}
+.conten2{
+    margin: 10px 30px;
+    padding: 10px 50px;
+}
+.conten2 input{
+    margin-left:60px ;
+    width: 220px;
+    height: 30px;
+    border-radius: 10px;
+}
+.conten2 button{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(6, 211, 6);
+}
+.formulaire1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    margin: 10px 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.formulaire1 input{
+    padding: 6px 40px;
+    border-radius: 10px;
+}
+.formulaire1 button{
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(6, 196, 6);
+}
+.explication1{
+    display: flex;
+    justify-content: center;
+}
+.explication1 img{
+    margin: 20px 70px;
+    border: 5px solid green;
+    border-radius: 20px;
+}
+.boutton2{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+.boutton2 button{
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(6, 211, 6);
+}
+.boutton2 input{
+ padding: 10px 60px;
+    border-radius: 10px;
+    margin-right: 10px;
+
+}
+.end{
+    background-color: black;
+    padding: 30px ;
+}
