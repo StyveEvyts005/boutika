@@ -71,10 +71,12 @@ nav img{
 }
 .explication1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px
 }
 .explication1 img{
-    margin: 20px 70px;
+    margin: 1em;
     border: 5px solid green;
     border-radius: 20px;
 }
@@ -99,4 +101,5 @@ nav img{
 .end{
     background-color: black;
     padding: 30px ;
+
 }
