@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+body{
+  margin: 20px 80px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+header nav div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+header nav div a{
+    text-decoration: none;
+    color: black;
+}
+header nav div a:hover{
+    text-decoration: underline;
+    color: black;
+    color: rgb(60, 60, 255);
+}
+header nav button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    transition: 0.3s ease-in-out;
+}
+header nav button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    
+}
+/* hero */
+@keyframes moov {
+    from{transform: scale(1.0);}
+    to{transform: scale(1.1);}
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0px;
+}
+.hero .slogant{
+    font-size: 50px;
+    font-weight: 800;
+    width: 550px;
+}
+.hero .slogant span{
+    color: rgb(60, 60, 255);
+}
+.hero .slogant button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.hero .slogant button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transform: translateX(25px);
+    box-shadow: -15px 5px 10px black;
+}
+.hero img{
+    animation: moov 1.8s ease-in-out infinite alternate;
+}
+/* Pour tout les titre  */
+.titre{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+.titre span{
+    background-color: rgb(60, 60, 255);
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+}
+.titre p{
+    width: 400px;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+/* propos */
+#propos{
+    padding: 20px 0px;
+}
+.description{
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#propos .description .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    padding: 20px;
+}
+#propos .box .text{
+    width: 350px;
+}
+ h3{
+    font-size: 30px;
+}
+#propos .box i{
+    font-size: 80px;
+}
+.noir{
+    background-color: black ;
+    color: white;
+    border-radius: 20px;
+}
+.ombre{
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 10px 0px black;
+}
+
+/* Service */
+.bleu{
+    color: rgb(60, 60, 255);
+}
+#service{
+    padding: 20px;
+}
+#service .titre p{
+    width: 500px;
+}
+#service .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 532px;
+    padding: 20px;
+}
+#service .box i{
+    font-size: 100px;
+}
+#service .box2{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#service .sous-box2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    width: 480px;
+}
+#service .sous-box2 span{
+    font-size: 30px;
+}
+#service .box21{
+    align-self: self-end;
+}
+#service .box22{
+    transform: translateX(-22px);
+}
+#service .text2{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Packs */
+.packs{
+    margin: 50px 0px;
+    background-color: rgb(215, 214, 255);
+    padding: 20px 22px;
+    border-radius: 20px;
+}
+.packs h3{
+    text-align: center;
+    letter-spacing: 10px;
+}
+.packs .basique{
+    border: 2px solid black;
+    box-shadow: 0px 20px 0px black;
+    background-color: white;
+}
+.packs .standard{
+    background-color:rgb(189, 189, 221) ;
+     box-shadow: 0px 20px 0px rgb(51, 51, 60);
+}
+.packs .standard button{
+    transform: translateY(40px);
+}
+.packs .prenium{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 20px 0px orangered;
+}
+.packs .prenium button{
+    transform: translateY(40px);
+    background-color: orangered;
+}
+.packs .prenium td{
+    border-top: 2px solid rgba(255, 68, 0, 0.442);
+}
+.pack-box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+.pack-box .prix{
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(60, 60, 255);
+    align-self: self-end;
+}
+.pack-box button{
+    align-self: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.pack-box button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.pack-box h4{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 500;
+    padding: 10px;
+}
+.pack-box table{
+    width: 300px;
+}
+.pack-box table th{
+    text-align: start;
+    padding: 10px;
+}
+.pack-box table td{
+    font-size: 12px;
+    padding: 10px;
+    font-family: monospace;
+    border-top: 2px solid rgba(0, 0, 0, 0.421);
+}
+.pack-box .non{
+    color: red;
+}
+.pack-box .oui{
+    color: green;
+}
+
+/* footer  */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-top: 2px solid black;
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: 700;
+    /* color: rgb(60, 60, 255); */
+}
+footer i{
+    font-size: 40px ;
+}
+.fa-facebook{
+    color: rgb(58, 58, 227);
+}
+.fa-whatsapp{
+    color: green;
+}
+
+@media(max-width: 600px){
+   body{
+    margin: 20px;
+   }
+   nav{
+    display: flex;
+    flex-direction: column;
+   }
+   nav img{
+    width: 200px;
+   }
+   header nav div{
+    display: none;
+   }
+   .hero{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .hero .slogant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+    width: 360px;
+    gap: 20px;
+}
+.hero img{
+    width: 400px;
+}
+
+.titre span{
+    font-size: 15px;
+}
+
+.description{
+    flex-direction: column;
+}
+#propos .description .box{
+    width: 350px;
+    padding: 20px;
+}
+#propos .box .text{
+    font-size: 12px;
+    width: 150px;
+}
+h3{
+    font-size: 20px;
+}
+#service .box{
+    flex-direction: column;
+    width: 300px;
+}
+#service .sous-box2{
+    width: 280px;   
+}
+#service .box21{
+    transform: translateX(30px);
+    margin: 10px;
+}
+#service .box{
+    flex-direction: column;
+    gap: 10px;
+}
+.packs{
+    background:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.packs .standard button, .packs .prenium button{
+    transform: translateY(-1px);
+}
+footer{
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+footer div{
+    align-items: center;
+    justify-content: center
+}
+}
