@@ -184,6 +184,7 @@ header nav button:hover{
 }
 #service .box21{
     align-self: self-end;
+    margin-bottom: 10px;
 }
 #service .box22{
     transform: translateX(-22px);
